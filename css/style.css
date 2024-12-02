@@ -1,0 +1,277 @@
+*  {
+    list-style: none;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    height: 145vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+    font-family: cursive;
+}
+
+p {
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+/* Cabecera */
+
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+}
+
+.logo {
+    height: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #7b5426; 
+}
+
+.item:hover {
+    color: #b89582;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #c59056;
+    color: #f1e6d8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7b5426;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+        margin: 0;
+    }
+
+    label {
+        display: initial;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #b89582;
+        display: none;
+    }
+
+    .item {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    #menu:checked ~ .menu {
+        display: initial;
+    }
+}
+
+
+
+
+
+/* Pie de pagina */
+
+
+#main-footer {
+	background: #b89582;
+	color: white;
+	text-align: center;
+	padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+
+	.goku {
+		color: ghostwhite;
+		font-size: 30px;
+	}
+
+
+
+/* Contenedores  */
+
+
+
+div#vacio {
+    width: 100%;
+    height: 800px;
+}
+
+div#contenedor {
+    width: 100%;
+    height: 1000px;
+}
+
+div#body{
+    margin: auto;
+    width: 690px;
+    height: 1000px;
+    background-color: antiquewhite;
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .content {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    display: flex;
+  }
+
+  .content1 {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 280%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    display: block;
+    align-items: center;
+  }
+
+  .content11 {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .content12 {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .content13 {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .content14 {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 20px rgb(123, 84, 38);
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 30%;
+  }
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+	
+.red-button {
+    text-decoration: none;
+    color: #000;
+    background-color: #b89582;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-family: cursive;
+    }
